@@ -15,9 +15,11 @@ class Node{
 
 class LinkedList {
     public:
-        Node* root; 
+        Node* root;
+        Node* tail;
         LinkedList() {
             root = NULL;
+            tail = NULL;
         }
 
         void insert(const int& val) {
@@ -25,11 +27,10 @@ class LinkedList {
         }
 
         Node* insertNode(Node* node, const int& val) {
-            Node* newNode = new Node(val);
-            if(!node) {
-                return newNode;
+            if(root == NULL && tail == NULL) {
+                return new Node(val);
             } else {
-                root->next = newNode;
+                tail->next = new Node(val);
             }
             return root;
         }
