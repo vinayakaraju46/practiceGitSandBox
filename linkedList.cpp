@@ -26,7 +26,7 @@ class LinkedList {
 
         Node* insertNode(Node* node, const int& val) {
             Node* newNode = new Node(val);
-            if(!node) {
+            if(!root) {
                 return newNode;
             } else {
                 root->next = newNode;
