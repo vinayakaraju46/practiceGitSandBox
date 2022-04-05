@@ -19,6 +19,14 @@ class LinkedList {
         LinkedList() {
             root = NULL;
         }
+
+        void insert(const int& val) {
+            root = insertNode(root, value)
+        }
+
+        Node* insertNode(Node* node, const int& val) {
+            
+        }
 }
 
 int main() {
