@@ -13,6 +13,13 @@ class Node{
         }
 };
 
+class LinkedList {
+    public:
+        Node* root; 
+        LinkedList() {
+            root = NULL;
+        }
+}
 
 int main() {
 
