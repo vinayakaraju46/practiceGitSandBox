@@ -33,6 +33,19 @@ class LinkedList {
             }
             return root;
         }
+        void display() {
+            traverseinorder(root);
+        }
+
+        void traverseinorder(Node* node) {
+            if(node->left) {
+                traverseinorder(node->left);
+            }
+            cout << node->data << endl;
+            if(node->right) {
+                traverseinorder(node->right);
+            }
+        }
 }
 
 int main() {
